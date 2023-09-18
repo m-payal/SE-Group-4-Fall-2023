@@ -10,7 +10,7 @@ All the scorecards are placed in the Scorecards sub-directory.
 |WolfTrack | SE Project - WolfTrack 3.0.csv|
 
 # Project Demo Video (Simplii)
-https://youtu.be/lQ1bWZrHnJk
+https://www.youtube.com/watch?v=WrzEI4IP7fQ
 
 # SE Project 1 Essay
 
