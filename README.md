@@ -5,19 +5,19 @@
 
 Overall, we felt pain in these places. 
 First of all, even though the database was hosted using cloud services like AWS, there were no clear instructions provided on how to modify the connections using our own accounts. 
-The database connection had to be added to the project by email, which we had to do with the previous account holder. 
-Due to a lack of feedback, one project had to be abandoned. This example was discovered in two programs, Wolftrack and Simplii. There was no way to immediately test if the program functions properly because the directions for setting up the local database were unclear.
+The database connection needed aceess to an AWS account owned by previous developers and hence was not easily accessible.  
+Since we were not able get credentials for one account and there were no instructions for a local setup, we had to abandon one project. This example was discovered in two repos, Wolftrack and Simplii. There was no way to immediately test if the project functions properly because the directions for setting up the local database were unclear.
 Also, one project (Classmate_bot) was dependent on Heroku and needed an active Heroku account. Since Heroku removed free tier access, testing it was not possible. 
 
-Second, the use cases of projects are not supported by the current implementation. The software is only functional for the use case shown there and does not work for any other use case.
+Second, the use cases of projects are not supported by the current implementation. The software is only functional for the use case shown in the repo and does not work for any other use case.
 For instance, the units_converter_extension does not work with Chromium-based browsers like Chrome or Brave since such browsers do not support the JavaScript functions module.exports and require("module"). 
 
 Additionally, obsolete systems may use libraries that are no longer supported or updated. Numerous packages, including gensim, are present for the project WolfTrack but are incompatible with the most recent Python version. The other dependencies of the project are incompatible with the working version of this package. 
 
-The future scope of this projects like GITS, Wolftrack, units_converter is not written in the docs. However, in the project Classmate_bot the future scope is mentioned clearly with all the different directions that we can take. 
+The future scope of projects like GITS, Wolftrack, units_converter is not written in the docs. However, in the project Classmate_bot the future scope is mentioned clearly with all the different directions that we can take. 
 
-Further, in the project Simpli, the database schema described in the docs is not complete. There are many intermediate views that need to be created. The only way to find this out was through database logs from in the code. This made the process harder since a lot of time was spent debugging by assuming all required tables were already created.  
-In addition to this, the error messages sent from the system were not logged and only custom messages were sent to the user. Hence the process of tracing errors became harder since we had to first trace the flow without the proper database tables and then figure out the exact error. 
+Further, in the project Simplii, the database schema described in the docs is not complete. There are many intermediate views that need to be created. The only way to find this out was through database logs from in the code. This made the process harder since a lot of time was spent debugging by assuming all required tables were already created.  
+In addition to this, the error messages sent from the system were not logged and only generic messages were sent to the user that did not give a clear indication of what went wrong. Hence the process of tracing errors became harder since we had to first trace the flow without the proper database tables and then figure out the exact error. 
 
  
 ## How that pain could have been avoided
