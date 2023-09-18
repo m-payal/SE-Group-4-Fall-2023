@@ -28,7 +28,7 @@ For instance, the units_converter_extension does not work with Chromium-based br
 
 Additionally, obsolete systems may use libraries that are no longer supported or updated. Numerous packages, including gensim, are present for the project WolfTrack but are incompatible with the most recent Python version. The other dependencies of the project are incompatible with the working version of this package. 
 
-The future scope of projects like GITS, Wolftrack, units_converter is not written in the docs. However, in the project Classmate_bot the future scope is mentioned clearly with all the different directions that we can take. 
+The future scope of projects like GITS, Wolftrack, units_converter is not written in the docs. However, in the projects Classmate_bot and Simplii the future scope is mentioned clearly with all the different directions that we can take. 
 
 Further, in the project Simplii, the database schema described in the docs is not complete. There are many intermediate views that need to be created. The only way to find this out was through database logs from in the code. This made the process harder since a lot of time was spent debugging by assuming all required tables were already created.  
 In addition to this, the error messages sent from the system were not logged and only generic messages were sent to the user that did not give a clear indication of what went wrong. Hence the process of tracing errors became harder since we had to first trace the flow without the proper database tables and then figure out the exact error. 
